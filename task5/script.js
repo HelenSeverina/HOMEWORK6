@@ -1,0 +1,13 @@
+document.querySelector('h1').style.backgroundColor = 'lightgreen';
+let p = document.querySelectorAll('#myDiv > p');
+p[0].style.fontWeight = 'bold';
+p[1].style.color = 'red';
+p[2].style.textDecoration = 'underline';
+p[3].style.fontStyle = 'italic';
+let children = document.querySelectorAll('li');
+let li = document.createElement('li');
+li.innerHTML = 'Makemehorisontal';
+children[0].replaceWith(li);
+children[1].remove();
+children[2].remove();
+document.querySelector('span').style.display = 'none';
